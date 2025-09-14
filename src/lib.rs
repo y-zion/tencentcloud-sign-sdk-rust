@@ -7,4 +7,4 @@ pub mod crypto;
 pub mod tc3;
 
 pub use crypto::{hmac_sha256, hmac_sha256_hex, sha256_hex};
-pub use tc3::{Tc3Signer, Tc3SignResult};
+pub use tc3::{Tc3SignResult, Tc3Signer};

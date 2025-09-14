@@ -76,7 +76,10 @@ mod tests {
     #[test]
     fn test_sha256_hex() {
         let result = sha256_hex("hello world");
-        assert_eq!(result, "b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9");
+        assert_eq!(
+            result,
+            "b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9"
+        );
     }
 
     #[test]
@@ -85,6 +88,9 @@ mod tests {
         let data = "hello world";
         let result = hmac_sha256_hex(key, data);
         // This is a known test vector for HMAC-SHA256
-        assert_eq!(result, "734cc62f32841568f45715aeb9f4d7891324e6d948e4c6c60c0621cdac48623a");
+        assert_eq!(
+            result,
+            "734cc62f32841568f45715aeb9f4d7891324e6d948e4c6c60c0621cdac48623a"
+        );
     }
 }

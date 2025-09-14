@@ -164,7 +164,11 @@ impl Tc3Signer {
     /// let auth_header = signer.create_authorization_header(&result, "content-type;host");
     /// // Returns: "TC3-HMAC-SHA256 Credential=secret_id/20231201/hunyuan/tc3_request, SignedHeaders=content-type;host, Signature=..."
     /// ```
-    pub fn create_authorization_header(&self, result: &Tc3SignResult, signed_headers: &str) -> String {
+    pub fn create_authorization_header(
+        &self,
+        result: &Tc3SignResult,
+        signed_headers: &str,
+    ) -> String {
         format!(
             "TC3-HMAC-SHA256 Credential={}/{}, SignedHeaders={}, Signature={}",
             self.secret_id, result.credential_scope, signed_headers, result.signature
