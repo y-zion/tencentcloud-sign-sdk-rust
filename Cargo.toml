@@ -8,7 +8,7 @@ repository = "https://github.com/y-zion/tencentcloud-sign-sdk-rust"
 homepage = "https://github.com/y-zion/tencentcloud-sign-sdk-rust"
 documentation = "https://docs.rs/tencentcloud-sign-sdk"
 readme = "README.md"
-keywords = ["tencentcloud", "sign", "sdk", "hmac", "sha256", "tc3"]
+keywords = ["tencentcloud", "sign", "sdk", "hmac", "tc3"]
 categories = ["api-bindings", "authentication"]
 license-file = "LICENSE"
 
